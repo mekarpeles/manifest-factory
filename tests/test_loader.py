@@ -1,10 +1,11 @@
-from factory import DataError, StructuralError, RequirementError, ConfigurationError, PresentationError
-from loader import SerializationError, ManifestReader
 
 import urllib, os, sys
 import difflib
 import json
 
+from mf.factory import DataError, StructuralError, RequirementError, \
+    ConfigurationError, PresentationError
+from mf.loader import SerializationError, ManifestReader
 
 class TestError(PresentationError):
 	pass
